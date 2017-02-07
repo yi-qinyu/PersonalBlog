@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<title>覃时项羽</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="js/function.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="js/aboutme.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/m1.png">
+	<style type="text/css" media="screen">
+		body{width: 100%;height: auto; overflow: hidden;}
+	</style>
+</head>
+<body onload="loadrun()">
+	<!--头部标题-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="h1">不再惧怕,勇往直前 <span class="titlefooter">——不忘初心,继续前进</span></p>
+			</div>
+			<div class="col-xs-1 back-thinbtn">
+				<a href="#" class="btn btn-link" onclick="showThin()"><strong>换肤</strong></a>
+			</div>
+		</div>
+	</div>
+	<!--菜单部分-->
+	<div class="container-fluid" style="background: -webkit-linear-gradient(#33FFFF,#0088A8); ">
+		<div class="container row">
+			<div class="col-xs-1" id="menuHome" onclick="menudef('Home')">
+				<a href="#" class="btn btn-link center-block"><strong>首页</strong></a>
+			</div>
+			<div class="col-xs-1" id="menuBowen" onclick="menudef('Bowen')">
+				<a href="#" class="btn btn-link center-block"><strong>博文</strong></a>
+			</div>
+			<div class="col-xs-1" id="menuSuibi" onclick="menudef('Suibi')">
+				<a href="#" class="btn btn-link center-block"><strong>随笔</strong></a>
+			</div>
+			<div class="col-xs-1" id="menuJianshang" onclick="menudef('Jianshang')">
+				<a href="#" class="btn btn-link center-block"><strong>鉴赏</strong></a>
+			</div>
+			<div class="col-xs-1" id="menuFiction" onclick="menudef('Fiction')">
+				<a href="#" class="btn btn-link center-block"><strong>小说</strong></a>
+			</div>
+			<div class="col-xs-1" id="menuAboutme" onclick="menudef('Aboutme')">
+				<a href="#" class="btn btn-link center-block"><strong>知我</strong></a>
+			</div>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class="content row" id="content">
+			{{{body}}}
+		</div>
+		<div class="contentfooter row" id="contentfooter">
+			<span class="footerMess"><strong>覃时项羽   版权所有</strong><br>@copyright</span>
+		</div>
+	</div>
+	<!--切换皮肤-->
+	<div class="thinback hidden" id="thinwin">
+		<div class="thinoperator">
+			<div class="thinleft" id="thinleft" onclick="switchLeftOrRight(1)">
+				<img class="center-block thinicon"  src="img/sign-left-icon.png">
+			</div>
+			<div class="thinshow defaultThin" id="thinshow" onmouseover="showSwitch()" onmouseout="hideSwitch()">
+				<div class="switch hidden" id="switch">
+					<div class="switchBtn" id="switchBtn" onclick="switchSelect()">
+						<h1>点击选择切换皮肤</h1>
+					</div>
+				</div>
+			</div>
+			<div class="thinright" id="thinright" onclick="switchLeftOrRight(2)">
+				<img class="center-block thinicon" src="img/sign-right-icon.png">
+			</div>
+		</div>
+		<!--皮肤下方工具栏-->
+		<div class="thinselector" id="thinselector">
+			<div class="selectleft"> <img src="img/arrow-left.png" class="selectpng"> </div>
+			<div class="selectmain">
+				
+			</div>
+			<div class="selectright"> <img src="img/arrow-right.png" class="selectpng"> </div>
+		</div>
+	</div>
+</body>
+<html>

@@ -1,0 +1,252 @@
+
+/*隐藏*/
+.hidden{
+	display: none;
+}
+/*生成,显示*/
+.show{
+	display: inline;
+}
+
+/*当前选中菜单样式*/
+.menufocus{
+	border-bottom:2px solid black;
+	border-radius:2px;
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0.5),rgba(41,41,41,0.5));
+}
+
+/*换肤链接*/
+.back-thinbtn{
+	margin-left: 40%;
+	margin-top: 36px;
+	height: 80%;
+}
+
+/*针对标题出现白色块异常*/
+.noneborder{
+	border: 0 solid black;
+}
+
+/*标题引用*/
+.titlefooter{
+	font-size:5px;
+	color: rgb(120,120,120);
+}
+
+/*皮肤背景*/
+.thinback{
+	width: 100%;
+	margin: 0;
+	background: rgba(99,99,99,0.7);
+	position: fixed;
+  	top: 0;
+ 	right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    box-shadow: 10px 10px 3px 5px black;
+}
+
+/*皮肤展示div*/
+.thinshow{
+	width: 64%;
+	height: 100%;
+	background-image: url("../img/bg0.jpg");
+	border: 3px solid white;
+	border-radius: 9px;
+	float: left;
+	margin-left: 8%;
+	box-shadow: 10px 10px 8px gray;
+}
+/*默认皮肤*/
+.defaultThin{
+	background-size: 100% 100%;
+	background-position: fixed;
+}
+/*选择皮肤*/
+.thinselector{
+	background-color: rgba(111,111,111,0.8);
+	border-top: 1px solid white;
+	border-bottom:1px solid white;
+	margin-top: 30px;
+	width: 100%;
+	height: 120px;
+	-webkit-box-shadow:0 0 10px 9px #999;  
+    -moz-box-shadow:0 0 10px 9px #999;  
+    box-shadow:0 0 10px 9px #999;  
+}
+
+.thinoperator{
+	width: 100%;
+	height: 64%;
+	margin-top: 50px;
+	background-color: rgba(200,200,200,0.2);
+}
+
+/*皮肤左侧按钮*/
+.thinleft{
+	width: 10%;
+	float: left;
+	height: 100%;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background-color: rgba(50,50,50,1);
+/*	animation: beauty 5s infinite;
+	-webkit-animation: beauty 5s infinite;*/
+}
+/*皮肤右侧按钮*/
+.thinright{
+	width: 10%;
+	height: 100%;
+	float: left;
+	margin-left: 8%;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background-color: rgba(50,50,50,1);
+/*	animation: beauty 5s infinite;
+	-webkit-animation: beauty 5s infinite;*/
+}
+/*翻页皮肤图标*/
+.thinicon{
+	height: 80px;
+	width:80px;
+	margin-top: 100%;
+	animation: beauty 20s infinite;
+	-webkit-animation: beauty 20s infinite;
+}
+.thinicon:hover{
+	animation: xz 0.5s 1;
+	-webkit-animation: xz 0.5s 1;
+}
+/*left,right鼠标hover效果*/
+.thinright:hover{
+	background-color: rgba(210,210,210,0.8);
+	cursor: pointer;
+}
+.thinleft:hover{
+	background-color: rgba(210,210,210,0.8);
+	cursor: pointer;
+}
+.thinshow:hover{  
+	background-color: rgba(255,218,185,1);
+}
+/*确定切换皮肤div*/
+.switchBtn{
+	width: 70%;
+	height: 40%;
+	left: 15%;
+	top: 30%;
+	background-color: rgba(255,255,255,0);
+	border: 3px solid  rgba(111,111,111,1);
+	border-radius: 6px;
+	position: relative;
+	text-align: center;
+	-webkit-box-shadow:0 0 10px 12px rgb(255,218,185);  
+    -moz-box-shadow:0 0 10px 12px rgb(255,218,185);  
+    box-shadow:0 0 10px 12px rgb(255,218,185);  
+}
+.switchBtn:hover{
+	cursor: pointer;
+}
+
+.switch{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: rgba(250,235,215,0.4); 
+}
+/**/
+.selectleft{
+	width: 100px;
+	height: 100%;
+	float: left;
+	background-color: rgba(255,255,255,0.8);
+}
+.selectright{
+	width: 100px;
+	height: 100%;
+	float: right;
+	background-color: rgba(255,255,255,0.8);
+}
+.selectpng{
+	height: 70%;
+	width: 50%;
+	margin-top: 15%;
+	margin-left: 25%;
+}
+.selectpng:hover{
+	cursor: pointer;
+}
+.selectmain{
+	overflow: hidden;
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	overflow: auto;
+} 
+.panel{
+	width: 100%;
+	min-height: 780px;
+	height: auto;
+	background-color: rgba(0,0,0,0);
+}
+.content{
+/*	height: 100%;*/
+	width: 70%;
+	min-height: 700px;/*高度自增*/
+	height: auto;
+	margin-top: 0;
+	margin-left: 15%;
+	background-color: rgba(250 ,235, 215,1);
+	position: relative;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.contentfooter{
+	height: 80px;
+	width: 70%;
+	background: rgba(255,218,185,1);
+	margin-top:  0;
+	margin-left: 15%;
+	position: relative;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.footerMess{
+	position:absolute;
+	top:25px;
+	left:42%;
+	text-align: center;
+}
+
+/*皮肤侧边按钮动画效果*/
+@keyframes beauty{
+	0%   {height: 80px;width: 80px; }
+	50%  {height: 100px;width: 100px; }
+	100% {height: 80px;width: 80px; }
+}
+@-webkit-keyframes beauty{
+	0%   {height: 80px;width: 80px; }
+	50%  {height: 100px;width: 100px; }
+	100% {height: 80px;width: 80px; }
+}
+
+/*hover效果*/
+@keyframes xz{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@-webkit-keyframes xz{
+	from{-webkit-transform:rotate(0deg);}
+	to{-webkit-transform:rotate(360deg);}
+}
+
